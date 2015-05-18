@@ -13,13 +13,8 @@ def rec(N,K,lastDigit=0):
         sums+=rec(N-1,K,i)
     cache[h]=sums
     return sums
-i=0
 N=0
 K=0
-for line in sys.stdin:
-    if i%2==0:
-        N=int(line)
-    else:
-        K = int(line)
-        print rec(N,K)
-    i+=1
+N=input()
+K = input()
+print rec(N,K)
