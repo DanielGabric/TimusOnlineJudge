@@ -16,4 +16,4 @@ L = input()
 for i in range(1,10):
     sums+=F[i][L]
 if L == 1: sums+=1
-print sums
+print sums 

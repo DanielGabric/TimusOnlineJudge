@@ -16,7 +16,7 @@ def rec(N,lastColor=-1,lastTwo=-1):
             if N!=1:sums+=rec(N-1,0,1)
         else:
             sums+=rec(N-1,1,2)
-            if N!=1:sums+=rec(N-1,0,2)
+            if N!=1:sums+=rec(N-1,0,2) 
     elif lastColor == 1:
         sums+=rec(N-1,2,1)
         if N!=1:sums+=rec(N-1,0,1)

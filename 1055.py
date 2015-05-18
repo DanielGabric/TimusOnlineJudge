@@ -7,7 +7,7 @@ def sieve(n):
             isPrime[i*j]=False
             j+=1
         i+=1
-    return isPrime
+    return isPrime 
 def getPrimeList(n):
     isPrime = sieve(n)
     listPrimes = []

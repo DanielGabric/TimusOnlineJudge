@@ -11,7 +11,7 @@ def rec(N,K,lastDigit=0):
     for i in range(1,K):
         sums+=rec(N-1,K,i)
     cache[h]=sums
-    return sums
+    return sums 
 N=0
 K=0
 N=input()

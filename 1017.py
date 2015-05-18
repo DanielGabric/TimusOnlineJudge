@@ -9,7 +9,7 @@ def rec(N,last,M):
         return 0
     h = str(N)+str(last)
     if h in cache :
-        return cache[h]
+        return cache[h] 
     for i in range(last+1,M-N+1):
         sums+=rec(N+i,i,M)
     cache[h]=sums

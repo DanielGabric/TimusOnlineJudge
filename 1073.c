@@ -10,5 +10,5 @@ int main(){
     while(scanf("%d",&input)!=EOF){
         printf("%llu\n", dp[input]);
     }
-    return 0;
+    return 0; 
 }
