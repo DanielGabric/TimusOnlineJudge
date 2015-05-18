@@ -1,4 +1,3 @@
-import sys
 cache={}
 def rec(N,K,lastDigit=0):
     sums=0
