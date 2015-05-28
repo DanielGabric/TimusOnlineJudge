@@ -1,6 +1,3 @@
-#solve using bottom-up Dynamic Programming
-#solve from smaller sums then combine them
-#to solve the bigger problem
 F = [[0 for i in range(10)] for i in range(82)]
 F[0][0]=1
 #lengths of numbers from 1-9
