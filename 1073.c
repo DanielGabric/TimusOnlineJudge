@@ -8,7 +8,7 @@ int main(){
         }
     }
     while(scanf("%d",&input)!=EOF){
-        printf("%llu\n", dp[input]);
+        printf("%llu\n", dp[input]); 
     }
     return 0; 
 }

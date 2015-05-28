@@ -10,7 +10,7 @@ def rec(N,last,M):
     h = str(N)+str(last)
     if h in cache :
         return cache[h] 
-    for i in range(last+1,M-N+1):
+    for i in range(last+1,M-N+1): 
         sums+=rec(N+i,i,M)
     cache[h]=sums
     return sums
@@ -20,7 +20,7 @@ dp[0][0]=1
 for i in range(1,501):
     for j in range(0,501):
         if j <i:
-            dp[i][j]=dp[i-1][j]
+            dp[i][j]=dp[i-1][j] 
             continue
 
         dp[i][j]=dp[i-1][j]+dp[i-1][j-i]
