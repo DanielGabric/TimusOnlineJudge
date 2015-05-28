@@ -11,7 +11,7 @@ def sieve(n):
 def getPrimeList(n):
     isPrime = sieve(n)
     listPrimes = []
-    for i in range(2, n+1):
+    for i in range(2, n+1): 
         if isPrime[i]:listPrimes.append(i)
 
     return listPrimes
