@@ -1,4 +1,4 @@
-cache={}
+cache={} 
 def rec(N,K,lastDigit=0):
     sums=0
     if N==0:
