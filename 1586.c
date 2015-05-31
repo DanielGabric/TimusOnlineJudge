@@ -26,13 +26,11 @@ int main(){
     for(length=4;length<=N;++length)
         for(i=1;i<=9;i+=2)
             for(j=10;j<=99;++j)
-                if(ps[j*10+i]){
+                if(ps[j*10+i])
                     F[length][i+(j%10)*10]=(F[length][i+(j%10)*10]+F[length-1][j])%mod;
-                }
     LONG sum=0;
-    for(i=0;i<100;++i){
+    for(i=0;i<100;++i)
         sum=(sum+F[input][i])%mod;
-    }
     printf("%lli\n",sum);
     return 0;
 }
