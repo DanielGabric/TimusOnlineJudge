@@ -17,7 +17,7 @@ int main(){
     //We only care about the length of the number and the last two digits
     //Generate all odd digits and all 2 digit numbers
     //if the the 2 digit number + odd digit is a prime
-    //then increment add all combinations of three primes with those three digits
+    //then add all combinations of three primes with those last two digits
     //being the end
     //i.e. i = 3, j = 23, length = 5
     //233 is a prime so
