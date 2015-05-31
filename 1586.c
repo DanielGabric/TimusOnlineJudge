@@ -9,10 +9,20 @@ int main(){
     LONG F[N+1][100]={0};
     int ps[1000]={0};
     int i,j,length;
+    //intializing primes and base cases for DP
     for(i=0;i<143;++i){
         ps[primes[i]]=1;
         F[3][primes[i]%100]++;
     }
+    //We only care about the length of the number and the last two digits
+    //Generate all odd digits and all 2 digit numbers
+    //if the the 2 digit number + odd digit is a prime
+    //then increment add all combinations of three primes with those three digits
+    //being the end
+    //i.e. i = 3, j = 23, length = 5
+    //233 is a prime so
+    // F[5][33] = (F[5][33]+F[4][23]) % mod
+    //calculate sub problems to solve the main problem
     for(length=4;length<=N;++length)
         for(i=1;i<=9;i+=2)
             for(j=10;j<=99;++j)
