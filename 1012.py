@@ -1,4 +1,4 @@
-#smarter bottom-up DP solution than previous memoization top down solution 
+#smarter bottom-up DP solution than previous memoization top down solution (1009)
 N = input()
 K = input()
 #F = [[0 for i in range(0,K)] for i in range(0, N+1)]
