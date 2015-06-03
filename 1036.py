@@ -1,5 +1,4 @@
 cache=[[-1 for i in range(1001)] for i in range(1001)]
-
 def rec(s,n):
     sums=0
     if s < 0:
